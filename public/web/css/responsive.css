@@ -1,0 +1,295 @@
+@media only screen and (max-width:1200px) {
+
+
+    .ctaboxm {
+        display: block;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        z-index: 9999;
+        bottom: -1px;
+        left: 20px;
+    }
+    .ctacall {
+        padding: 20px;
+        background: #018650;
+        border-radius: 10px;
+        margin: 5px;
+        min-width: 175px;
+        max-width: 200px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+    }
+    .ctawp {
+        padding: 20px;
+        background: #49e670;
+        border-radius: 10px;
+        margin: 5px;
+        min-width: 175px;
+        max-width: 200px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+    }
+
+
+    .up-bar hr{
+        display: none;
+    }
+
+    .fixed-icons {
+
+        left: -20px;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width:990px) {
+
+
+
+    .all-programms .the-city img {
+        height: 158px;
+    }
+
+    .footer .logo-footer ul li {
+        text-align: right;
+    }
+    .social-media {
+        margin-bottom: 15px;
+    }
+    .up-bar .tel ul li
+    {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 auto;
+        float: none;
+        width: 44%;
+        text-align: left;
+        margin-bottom: 13px;
+    }
+    .up-bar .tel ul li:first-child{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .logo-footer ul li a{
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .up-bar .tel ul li a {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .up-bar .col-sm-9
+    {
+        padding: 0px;
+    }
+    .header .menu ul
+    {
+        margin-top: 15px;
+    }
+    .header .menu ul li
+    {
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .header .menu ul li a
+    {
+        padding-bottom: 10px;
+    }
+    .our-services .txt
+    {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .our-services .txt a
+    {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .our-services .the-serv img
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .programs-details .reserve-now
+    {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .up-bar .social-media ul
+    {
+        text-align: center;
+    }
+     .header .menu ul
+    {
+        display: none;
+    }
+    .header .logo img {
+        display: block;
+        margin: 10px;
+        width: auto;
+        height: 100px;
+    }
+    .hidden-xx
+    {
+        display: block;
+    }
+
+    .main-slider
+    {
+        margin-top: 5px;
+    }
+    .main-programs .programs-slider img{
+        height: 210px;
+    }
+
+    .about .content {
+        top: 340px;
+    }
+
+
+    .main-slider .the-slider img
+    {
+        height: 210px;
+    }
+    .our-services .the-serv a
+    {
+        font-size: 11px;
+    }
+    .your-trip form {
+        margin-top: -63px;
+
+    }
+    .maps iframe {
+        height: 350px;
+    }
+    .vedio iframe
+    {
+        height: 350px;
+    }
+    .fixed-icons {
+        z-index: 9999999999;
+    }
+    .testmonials .the-testmonial .qoutes
+    {
+        left: auto;
+        right: 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .maps .content
+    {
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        width: 85%;
+        top: 100px;
+    }
+    .footer
+    {
+        text-align: center;
+    }
+    .footer .logo-footer hr
+    {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer .logo-footer h4
+    {
+        margin-top: 20px;
+    }
+    .footer .logo-footer img
+    {
+        margin-bottom: 30px;
+    }
+    .footer .logo-footer ul {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+    .our-services .the-serv img
+    {
+        height: 50px;
+        width: 50px;
+    }
+    .about img
+    {
+        height: 171px;
+    }
+    .about-content h3 {
+        color: #182C61;
+        font-family: b-bold;
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .subscribe form input
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .programs-details .tabs .nav-item
+    {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .programs-details .tab-content .details-of-prog h4
+    {
+        font-size: 20px;
+    }
+    .programs-details .tab-content .details-of-prog ul li
+    {
+        width: 50%;
+    }
+    .programs-details .tab-content .details-of-prog p
+    {
+        font-size: 14px;
+    }
+    .programs-details .tab-content .details-of-prog h3 span
+    {
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        display: block;
+    }
+    .programs-details .tab-content .carousel img {
+        height: 320px;
+    }
+    .programs-details .tab-content .including-prog ul li
+    {
+        line-height: 30px;
+    }
+    .how-contact .pic img
+    {
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    .main-slider .the-slider img
+    {
+        height: 174px;
+    }
+    .about .content {
+        top: 309px;
+    }
+
+
+}
