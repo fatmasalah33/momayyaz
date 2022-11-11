@@ -11,4 +11,11 @@ class TicketController extends Controller
      
         return view('web.tickt.index');
     }
+
+    public function store(Request $request){
+
+        dd($request->all());
+
+    //    return redirect("/");
+    }
 }

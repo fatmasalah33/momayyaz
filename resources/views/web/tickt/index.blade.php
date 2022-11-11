@@ -1,6 +1,6 @@
 @extends('web.layout')
 @section('title')
-ticket
+طلب الحجز
 @endsection
 
 @section('styles')
@@ -33,7 +33,8 @@ ticket
                     <div class="col-md-8 col-md-push-2">
                         <div class="col-md-12">
                             <div id="result"></div>
-                            <form class="contact_us_form row bg-dark rounded-3 py-lg-4 ">
+                            <form  method="POST" action="{{url('/ticket/store')}}" class="contact_us_form row bg-dark rounded-3 py-lg-4 ">
+                                @csrf
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">الإسم</label>
                                     <input type="text" class="form-control" id="name" name="name"
@@ -41,7 +42,8 @@ ticket
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">الجنسية</label>
-                                    <input type="text" class="form-control" id="nationality" name="nationality"
+                                    <input type="text" class="form-control" id="nationality"
+                                     name="nationality"
                                         placeholder="الجنسية">
                                 </div>
                                 <div class="form-group col-md-12 text-right">
@@ -51,7 +53,7 @@ ticket
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">رقم الهاتف</label>
-                                    <input type="text" class="form-control" id="mobile" name="mobile"
+                                    <input type="text" class="form-control" id="mobile" name="phone"
                                         placeholder="رقم الهاتف">
                                 </div>
                                 <div class="form-group col-md-12 text-right">
@@ -61,37 +63,37 @@ ticket
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">تاريخ الوصول المتوقع</label>
-                                    <input type="text" class="form-control hasDatepicker" id="arrive_date"
-                                        name="arrive_date" placeholder="تاريخ الوصول" autocomplete="off">
+                                    <input type="date" class="form-control hasDatepicker" id="arrive_date"
+                                        name="date_of_arrival" placeholder="تاريخ الوصول" autocomplete="off">
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">تاريخ المغادرة المتوقع</label>
-                                    <input type="text" class="form-control hasDatepicker" id="departure_date"
+                                    <input type="date" class="form-control hasDatepicker" id="departure_date"
                                         name="departure_date" placeholder="تاريخ المغادرة" autocomplete="off">
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace"> نوع الحجز</label>
                                     <select name="booking_type" class="form-control valid">
-                                        <option> نوع الحجز </option>
-                                        <option value="برنامج سياحي كامل">برنامج سياحي كامل</option>
-                                        <option value="برنامج سياحي فنادق فقط">برنامج سياحي فنادق فقط</option>
-                                        <option value="برنامج سياحي مواصلات و جولات فقط">برنامج سياحي مواصلات و
+                                       
+                                        <option value="Complete tour program">برنامج سياحي كامل</option>
+                                        <option value="Hotel tourism program only">برنامج سياحي فنادق فقط</option>
+                                        <option value="Transportation and tourism program Tours only">برنامج سياحي مواصلات و
                                             جولات فقط</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">عدد البالغين</label>
-                                    <input type="text" class="form-control" id="adults" name="adults"
+                                    <input type="text" class="form-control" id="adults" name="number_of_adults"
                                         placeholder="عدد البالغين">
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">عدد الأطفال</label>
-                                    <input type="text" class="form-control" id="childs" name="childs"
+                                    <input type="text" class="form-control" id="childs" name="number_of_children"
                                         placeholder="عدد الأطفال">
                                 </div>
                                 <div class="form-group col-md-12 text-right">
                                     <label class="text-light font-monospace">تفاصيل اخرى</label>
-                                    <textarea name="notes" placeholder="تفاصيل اخرى"
+                                    <textarea name="other_details" placeholder="تفاصيل اخرى"
                                         class="form-control"></textarea>
                                 </div>
                                 <div class="form-group col-md-12">

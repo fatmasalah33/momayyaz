@@ -16,5 +16,7 @@ use App\Http\Controllers\web\DetailsController;
 */
 
 Route::get('/',[HomeController::class,'index']);
+Route::post('/store',[HomeController::class,'store']);
 Route::get('/ticket',[TicketController::class,'index']);
+Route::post('/ticket/store',[TicketController::class,'store']);
 Route::get('/details/show/{id}',[DetailsController::class,'show']);
