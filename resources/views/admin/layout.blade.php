@@ -68,20 +68,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <li class="nav-item">
             <a href="{{url('')}}" class="nav-link">
-              <i class="nav-icon fas fa-solid fa-list"></i>
-              
+              <i class="nav-icon far fa-image"></i>
+           
               <p>
-              Categories
+                Banners
               </p>
             </a>
           </li>
-          
           <li class="nav-item">
-            <a href="{{url('')}}" class="nav-link">
-              <i class="nav-icon fas fa-sharp fa-solid fa-store"></i>
-   
+            <a href="{{url("/dashboard/countries")}}" class="nav-link">
+              <i class="nav-icon fas fa-solid fa-list"></i>
+           
               <p>
-              Products
+              Countries
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url("/dashboard/notifications")}}" class="nav-link">
+              <i class="nav-icon fas fa-sharp fa-solid  fa-bell"></i>
+            
+              <p>
+                Notifications
               </p>
             </a>
           </li>
