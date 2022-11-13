@@ -105,7 +105,7 @@
                             <li id="menu-item-102">
                                 <a href="{{url("/")}}">الرئيسية</a>
                             </li>
-                            <li id="menu-item-153" class=" mx-5"><a href="#programme">العروض
+                            <li id="menu-item-153" class=" mx-5"><a href="{{url("countries")}}">العروض
                                     السياحية</a></li>
                             <li id="menu-item-111" class=" mx-5"><a href="{{url("ticket")}}">حجوزات
                                     الطيران</a></li>

@@ -34,7 +34,13 @@
 
         <form method="POST" action="{{url('dashboard/countries/store')}}"  enctype="multipart/form-data" >
          @csrf
-         <h2 class="title">Tourist program details</h2>
+         <h2 class="title" dir="rtl">تفاصيل البرنامج السياحي</h2>
+                 <div class="input-group d-flex flex-column">
+            <input class="form-control w-100 mb-1" type="hidden" placeholder="country_id"
+             name="country_id" value="{{$country->id}}">
+
+         
+          </div>
         <div class="input-group d-flex flex-column">
             <input class="form-control w-100 mb-1" type="text" placeholder="First day"
              name="first_day">
@@ -67,7 +73,13 @@
 
           
           </div>
-          <h2 class="title">   Trip Inclusions</h2>
+          <div class="input-group d-flex flex-column">
+            <input class="form-control mb-1 mt-3 w-100" type="text" placeholder=" fifth day"
+            name="fifth_day">
+
+          
+          </div>
+          <h2 class="title">  مشتملات الرحلة</h2>
        
           <hr>
           <div class="input-group d-flex flex-column">

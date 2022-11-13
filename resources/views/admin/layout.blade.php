@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3</title>
+  <title>dashboard</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{asset('admin/css/fontawesome.all.css')}}">
@@ -42,21 +42,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
+    {{-- <a href="#" class="brand-link">
       <img src="{{asset('admin/img/logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
+    </a> --}}
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{asset('admin/img/user-profile.jpg')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{ asset('web/img/logo.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin user</a>
+          <a href="#" class="d-block">مميز</a>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
 
           <li class="nav-item">
-            <a href="{{url('')}}" class="nav-link">
+            <a href="{{url("/dashboard/banners")}}" class="nav-link">
               <i class="nav-icon far fa-image"></i>
            
               <p>
@@ -115,10 +115,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+   
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright © 2019<a href="{{url("/")}}">
+      Mumayaz Travels.</a>.</strong>  All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->

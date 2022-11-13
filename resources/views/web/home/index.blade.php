@@ -15,13 +15,13 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('web/img/000.png')}}" class="d-block w-100 h-100" alt="...">
+                <img src="{{ asset("web/img/$banner->slide_1")}}" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('web/img/0000.png')}}" class="d-block w-100 h-100" alt="...">
+                <img src="{{ asset("web/img/$banner->slide_2")}}" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('web/img/00000.png')}}" class="d-block w-100 h-100" alt="...">
+                <img src="{{ asset("web/img/$banner->slide_3")}}" class="d-block w-100 h-100" alt="...">
             </div>
         </div>
     </div>
