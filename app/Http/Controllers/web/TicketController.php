@@ -11,7 +11,9 @@ class TicketController extends Controller
      
         return view('web.tickt.index');
     }
-
+    public function send(){
+        return view('web.tickt.send');
+    }
     public function store(Request $request){
 
         $request->validate([
@@ -44,6 +46,6 @@ class TicketController extends Controller
         ]);
         // dd($request->all());
 
-       return redirect("/");
+        return view('web.tickt.send');
     }
 }

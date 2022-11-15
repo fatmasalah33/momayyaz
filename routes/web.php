@@ -22,6 +22,7 @@ use App\Http\Controllers\admin\BannerController;
 Route::get('/',[HomeController::class,'index']);
 Route::post('/store',[HomeController::class,'store']);
 Route::get('/ticket',[TicketController::class,'index']);
+Route::get('/ticket/send',[TicketController::class,'send']);
 Route::get('/countries',[HomeController::class,'all']);
 Route::post('/ticket/store',[TicketController::class,'store']);
 Route::get('/details/show/{id}',[DetailsController::class,'show']);
